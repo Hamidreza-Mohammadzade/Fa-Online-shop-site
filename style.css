@@ -1,0 +1,427 @@
+html{
+    direction: rtl;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* ----------------------------------------------class------------------------------------------- */
+.bg-blue{
+    background-color: rgb(160, 160, 255);
+}
+
+.bg-cream{
+    background-color: rgb(233, 218, 200);
+}
+
+.bg-black{
+    background-color: rgb(29, 29, 29);
+}
+
+.bg-bisque{
+    background-color: bisque;
+}
+/* ---------------------------------------------up page------------------------------------------------ */
+.up-page{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color: lightgray;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 40px;
+    left: 40px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-decoration: none;
+}
+/* ----------------------------------------------support------------------------------------------------- */
+.support{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    color: white;
+    transition: width 500ms , height 500ms , opacity 800ms;
+}
+
+.support-detail{
+    display: none;
+    text-align: center;
+    opacity: 0;
+    /* transition: opacity 800ms; */
+}
+
+.support:hover .support-icon{
+    display: none;
+}
+
+.support:hover{
+    width: 200px;
+    height: 250px;
+}
+
+.support:hover .support-detail{
+    display: block;
+    opacity: 100;
+}
+/* ------------------------------------------------header----------------------------------------- */
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.nav-bar-right , .nav-bar-left{
+    display: flex;
+    align-items: center;
+    column-gap: 35px;
+    font-size: 20px;
+}
+/* -----------------------------------------------head------------------------------------------- */
+.head{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    column-gap: 8%;
+    margin: 0px;
+    float: left;
+}
+
+.head-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 5px;
+    width: 25%;
+}
+
+.head-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 25%;
+    margin: 0;
+}
+
+.head-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
+.img{
+    width: 100%;
+}
+
+.head-right h1{
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.head-right-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.line{
+    width: 10px;
+    height: 30px;
+    border: 0;
+    border-right: 2px solid lightgray;
+}
+
+.butt-head{
+    width: 100px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 2px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 150ms , background-color 150ms;
+}
+
+.butt-head:hover{
+    background-color: black;
+    color: white;
+}
+
+/* -------------------------------------------------- */
+.section-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    column-gap: 3%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.section-1-img{
+    display: flex;
+    justify-content: center;
+}
+
+.section-1-card{
+    width: 42%;
+    height: 375px;
+    max-height: 380px;
+    max-width: 490px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: transform 250ms;   
+}
+
+.section-1-card:hover{
+    transform: scale(0.98);
+}
+
+.section-1-headtx , .section-1-comment{
+    text-align: right;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.section-1-detail{
+    text-align: left;
+    text-decoration: underline 2px black; 
+}
+
+/* -------------------------------------------------popular--------------------------------------------- */
+.popular{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.popular-items-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    column-gap: 5%;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}
+
+.popular-card{
+    width: 18%;
+    padding: 10px;
+    transition: box-shadow 200ms , transform 200ms;
+}
+
+.popular-card:hover{
+    box-shadow: 0 0 8px lightgray , 0 0 10px whitesmoke;
+    transform: scale(1.02);
+}
+
+.popular-card-img{
+    display: flex;
+    justify-content: center;
+    height: 250px;
+}
+
+.popular-name-item{
+    text-align: right;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.popular-price-item{
+    text-align: left;
+    margin: 0;
+    margin-left: 5px;
+}
+/* --------------------------------------------collection---------------------------------------------- */
+.collections{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.collection-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 50px;
+    column-gap: 50px;
+}
+
+.card-tx{
+    display: block;
+    width: 300px;
+    height: 400px;
+}
+
+.card-tx p{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.collection-card{
+    width: 300px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    justify-content: space-between;
+    transition: box-shadow 200ms , transform 200ms;
+}
+
+.collection-butt{
+    width: 35%;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 3px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 850ms , color 100ms , background-color 100ms;
+}
+
+.collection-card:hover{
+    box-shadow: 0 0 8px lightgray , 0 0 10px whitesmoke;
+    transform: scale(1.02);
+}
+
+.collection-card:hover .collection-butt{
+    width: 100%;
+}
+
+.collection-butt:hover{
+    background-color: black;
+    color: white;
+}
+
+.collection-img{
+    display: flex;
+    justify-content: center;
+}
+/* ---------------------------------------------news------------------------------------------------- */
+.news{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.news-text{
+    width: 40%;
+}
+
+.input-news{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 30%;
+    row-gap: 5px;
+}
+
+.input-news a{
+    width: 50%;
+    height: 30px;
+    border: 0 solid;
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+input{
+    height: 35px;
+    border: 1px solid lightgray;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* -------------------------------------------width--------------------------------- */
+.w-200{
+    width: 200px;
+}
+
+.w-100{
+    width: 100px;
+}
+
+.w-75{
+    width: 75px;
+}
+
+.w-50{
+    width: 50px;
+}
+
+.w-fit{
+    width: fit-content;
+}
+
+.ta-left{
+    text-align: left;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.ta-right{
+    text-align: right;
+    margin: 0 ;
+    margin-top: 10px;
+}
+/* ------------------------------------------------font-------------------------------------------- */
+@font-face{
+    font-family: 'Vazir';
+    src: url(font/Vazir.ttf);
+}
+
+@font-face{
+    font-family: 'Ordibehesht';
+    src: url(font/Ordibehesht.TTF);
+}
+
+.Vazir-font{
+    font-family: Vazir;
+}
+
+.ordibehesht-font{
+    font-family: Ordibehesht;
+    font-weight: 10;
+}
